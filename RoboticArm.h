@@ -12,6 +12,21 @@
 #define CLAW_OUTPUT_PIN 13
 
 
+#define BASE_ANGLE_MIN 0
+#define SHOULDER_ANGLE_MIN 0
+#define ELBOW_ANGLE_MIN 0
+#define WRIST_ANGLE_MIN 0
+#define FOREARM_ANGLE_MIN 0
+#define CLAW_ANGLE_MIN 0
+
+#define BASE_ANGLE_MAX 180
+#define SHOULDER_ANGLE_MAX 180
+#define ELBOW_ANGLE_MAX 180
+#define WRIST_ANGLE_MAX 180
+#define FOREARM_ANGLE_MAX 180
+#define CLAW_ANGLE_MAX 180
+
+
 class RoboticArm {
     public:
         static void Setup();

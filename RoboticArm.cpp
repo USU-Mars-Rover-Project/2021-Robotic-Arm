@@ -21,32 +21,32 @@ void RoboticArm::Setup() {
 
 
 void RoboticArm::SetBaseAngle(int baseAngle) {
-    RoboticArmInstance->BaseAngle = baseAngle;
+    RoboticArmInstance->BaseAngle = (long)(baseAngle - BASE_ANGLE_MIN) * 180 / (BASE_ANGLE_MAX - BASE_ANGLE_MIN);
 }
 
 
 void RoboticArm::SetShoulderAngle(int shoulderAngle) {
-    RoboticArmInstance->ShoulderAngle = shoulderAngle;
+    RoboticArmInstance->ShoulderAngle = (long)(baseAngle - BASE_ANGLE_MIN) * 180 / (BASE_ANGLE_MAX - BASE_ANGLE_MIN);
 }
 
 
 void RoboticArm::SetElbowAngle(int elbowAngle) {
-    RoboticArmInstance->ElbowAngle = elbowAngle;
+    RoboticArmInstance->ElbowAngle = (long)(baseAngle - BASE_ANGLE_MIN) * 180 / (BASE_ANGLE_MAX - BASE_ANGLE_MIN);
 }
 
 
 void RoboticArm::SetWristAngle(int wristAngle) {
-    RoboticArmInstance->WristAngle = wristAngle;
+    RoboticArmInstance->WristAngle = (long)(baseAngle - BASE_ANGLE_MIN) * 180 / (BASE_ANGLE_MAX - BASE_ANGLE_MIN);
 }
 
 
 void RoboticArm::SetForearmAngle(int forearmAngle) {
-    RoboticArmInstance->ForearmAngle = forearmAngle;
+    RoboticArmInstance->ForearmAngle = (long)(baseAngle - BASE_ANGLE_MIN) * 180 / (BASE_ANGLE_MAX - BASE_ANGLE_MIN);
 }
 
 
 void RoboticArm::SetClawAngle(int clawAngle) {
-    RoboticArmInstance->ClawAngle = clawAngle;
+    RoboticArmInstance->ClawAngle = (long)(baseAngle - BASE_ANGLE_MIN) * 180 / (BASE_ANGLE_MAX - BASE_ANGLE_MIN);
 }
 
 

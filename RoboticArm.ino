@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include "MimicArm.h"
 #include "RoboticArm.h"
 
 
@@ -8,33 +7,27 @@ void setup() {
 
     delay(1000);
 
-    MimicArm::Setup();
     RoboticArm::Setup();
 }
 
 
 void loop() {
-    int baseAngle = MimicArm::GetBaseAngle();
-    int shoulderAngle = MimicArm::GetShoulderAngle();
-    int elbowAngle = MimicArm::GetElbowAngle();
-    int wristAngle = MimicArm::GetWristAngle();
-    int forearmAngle = MimicArm::GetForearmAngle();
-    int clawAngle = MimicArm::GetClawAngle();
-
-    Serial.println(baseAngle);
-    Serial.print("Shoulder: ");
-    Serial.println(shoulderAngle);
-    Serial.println(elbowAngle);
-    Serial.println(wristAngle);
-    Serial.println(forearmAngle);
-    Serial.println(clawAngle);
-
-    RoboticArm::SetBaseAngle(baseAngle);
-    RoboticArm::SetShoulderAngle(shoulderAngle);
-    RoboticArm::SetElbowAngle(elbowAngle);
-    RoboticArm::SetWristAngle(wristAngle);
-    RoboticArm::SetForearmAngle(forearmAngle);
-    RoboticArm::SetClawAngle(clawAngle);
+    while(Serial.available())  {
+        Serial.find('<');
+        int baseAngle = Serial.parseInt();
+        int shoulderAngle = Serial.parseInt();
+        int elbowAngle = Serial.parseInt();
+        int wristAngle = Serial.parseInt();
+        int forarmAngle = Serial.parseInt();
+        int clawAngle = Serial.parseInt();
+        
+        RoboticArm::SetBaseAngle(baseAngle);
+        RoboticArm::SetShoulderAngle(shoulderAngle);
+        RoboticArm::SetElbowAngle(elbowAngle);
+        RoboticArm::SetWristAngle(wristAngle);
+        RoboticArm::SetForearmAngle(forearmAngle);
+        RoboticArm::SetClawAngle(clawAngle);
+    }
 
     RoboticArm::UpdateArmPosition();
 }

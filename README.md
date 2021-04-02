@@ -30,21 +30,7 @@ This code has two sides to it. It measures the position of the mimic arm by read
 
 Mimic Arm
 ----------
-The mimc arm encoders send PWM signals. This code uses pin change interupts to read the signals.
-
-MimicArm
-
-This class handles the settings for the mimic arm including these for each encoder (one for each joint):
-  - pin
-  - angle offset
-  - angle minimum
-  - angle maximum
-
-The MimicArm object stores this data in the MimicJoint Objects
-
-MimicJoint
-
-This class handles communication with the encoders. It uses pin change interrups and callbacks to measure the length of each high and low pulse. It also calculates the angle, which is accessible through the GetAngle() member function.
+See MimicArm repository.
 
 Robotic Arm
 -----------

@@ -18,7 +18,7 @@ void loop() {
         int shoulderAngle = Serial.parseInt();
         int elbowAngle = Serial.parseInt();
         int wristAngle = Serial.parseInt();
-        int forarmAngle = Serial.parseInt();
+        int forearmAngle = Serial.parseInt();
         int clawAngle = Serial.parseInt();
         
         RoboticArm::SetBaseAngle(baseAngle);

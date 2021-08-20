@@ -1,6 +1,6 @@
 Very Basic Use
 ==============
-This is here for team members who are less familiar with Arduinos and don't want to look it up.
+For those less familiar with Arduinos
 
 Uploading code to Arduino
 -------------------------

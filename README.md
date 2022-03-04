@@ -26,7 +26,7 @@ The roboric arm reads PWM signals form the the wires labeled DOF0-DOF5 (degree o
 
 Code Overview
 =============
-This code has two sides to it. It measures the position of the mimic arm by reading the PWM signals sent by the encoders. It also generates its own PWM signal to tell the robotic arm the disired position. The code has one class for the robotic arm: RoboticArm. The code has two classes for the mimic arm: MimicArm and MimicJoint. MimicJoint is used by MimicArm. Currently this is written to all be put on the same
+This code has two sides to it. It measures the position of the mimic arm by reading the PWM signals sent by the encoders. It also generates its own PWM signal to tell the robotic arm the disired position. The code has one class for the robotic arm: RoboticArm. The code has two classes for the mimic arm: MimicArm and MimicJoint. MimicJoint is used by MimicArm.
 
 Mimic Arm
 ----------

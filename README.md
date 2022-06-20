@@ -18,7 +18,7 @@ Wiring
 
 Mimic Arm 
 
-The mimic arm has encoders with three pins: black, red, and yellow. Black is ground, red is 5V, and yellow is the signal. This code uses analog pins on the arduino (but it doesn't use them as analog pins). The pins for the mimic arm are found in MimicArm.h. Connect the yellow wires to these pins. 
+The mimic arm has a mixture of potentiometers and encoders (which makes it confusing) with three pins: black, red, and yellow. Black is ground, red is 5V, and yellow is the signal. This code uses analog pins on the arduino (but it doesn't use them as analog pins (except for the potentiometers)). The pins for the mimic arm are found in MimicArm.h. Connect the yellow wires to these pins. 
 
 Robotic Arm
 
